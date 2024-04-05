@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title  -->
+  <title>SenihHaber | Anasayfa</title>
+  <meta name="description" content="Tailwind CSS News Template">
+
+  <!-- Development css -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- Production css -->
+  <!-- <link rel="stylesheet" href="dist/css/style.css"> -->
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Favicon  -->
+  <link rel="icon" href="src/img/favicon.jpg">
+</head>
+  <!-- ========== { HEADER }==========  -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <nav class="bg-black">
+       <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+         <div class="flex justify-between">
+           <div class="mx-w-10 text-2xl font-bold capitalize text-white flex items-center">SenihHaber</div>
+           
+           <div class="flex flex-row">
+             <!-- nav menu -->
+             <ul class="navbar hidden lg:flex lg:flex-row text-gray-400 text-sm items-center font-bold">
+               <li class="active relative border-l border-gray-800 hover:bg-gray-900">
+                 <a class="block py-3 px-6 border-b-2 border-transparent" href="/">Anasayfa</a>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="kategori/gundem.html">Gündem</a>
+                </li>  
+               <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                 <a class="block py-3 px-6 border-b-2 border-transparent" href="kategori/bilim-teknoloji.html">Bilim-Teknoloji</a>
+               </li>
+               <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                 <a class="block py-3 px-6 border-b-2 border-transparent" href="kategori/finans.html">Finans</a>
+               </li>
+               <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                 <a class="block py-3 px-6 border-b-2 border-transparent" href="kategori/spor.html">Spor</a>
+               </li>
+               <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                 <a class="block py-3 px-6 border-b-2 border-transparent" href="kategori/yasam.html">Yaşam</a>
+                <li class="relative border-l border-gray-800 hover:bg-gray-900">
+                  <a class="block py-3 px-6 border-b-2 border-transparent" href="index-2.html">Kategoriler</a>
+             </ul>
+
+             <!-- search form & mobile nav -->
+               <div class="relative hover:bg-gray-800 block lg:hidden">
+                 <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent">
+                   <span class="sr-only">Mobile menu</span>
+                   <svg class="inline-block h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                   </svg> Menü
+                 </button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+    </nav>
+ </header><!-- end header -->
+ 
+ <!-- Mobile menu -->
+  <div class="side-area fixed w-full h-full inset-0 z-50">
+    <!-- bg open -->
+    <div class="back-menu fixed bg-gray-900 bg-opacity-70 w-full h-full inset-x-0 top-0">
+      <div class="cursor-pointer text-white absolute right-64 p-2">
+        <svg class="bi bi-x" width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"></path>
+          <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Mobile navbar -->
+    <nav id="mobile-nav" class="side-menu flex flex-col right-0 w-64 fixed top-0 bg-white dark:bg-gray-800 h-full overflow-auto z-40">
+      <div class="mb-auto">
+        <!--navigation-->
+        <nav class="relative flex flex-wrap">
+          <div class="text-center py-4 w-full font-bold border-b border-gray-100">SENIHHABER</div>
+          <ul id="side-menu" class="w-full float-none flex flex-col">
+            <li class="relative">
+              <a href="/" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Anasayfa</a>
+            </li>
+            <li class="relative">
+              <a href="kategori/gundem.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Gündem</a>
+            </li>
+
+            <li class="relative">
+              <a href="kategori/bilim-teknoloji.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Bilim-Teknoloji</a>
+            </li>
+
+            <li class="relative">
+              <a href="kategori/finans.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Finans</a>
+            </li>
+
+            <li class="relative">
+              <a href="kategori/spor.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Spor</a>
+            </li>
+
+            <li class="relative">
+              <a href="kategori/yasam.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Yaşam</a>
+            </li>
+          
+            <li class="relative">
+              <a href="index-2.html" class="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50">Kategoriler</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+      <!-- copyright -->
+      <div class="py-4 px-6 text-sm mt-6 text-center">
+        <p>Copyright <a href="/">SenihHaber</a> - Tüm Hakları Saklıdır</p>
+      </div>
+    </nav>
+  </div><!-- End Mobile menu -->
+
+<!-- =========={ MAIN }==========  -->
+<pre>
+
+
+
+</pre>
+  
+    <!-- hero big grid -->
+    <div class="bg-white py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <!-- big grid 1 -->
+        <div class="flex flex-row flex-wrap">
+          <!--Start left cover-->
+          <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
+            <div class="relative hover-img max-h-98 overflow-hidden">
+              <a target="_blank" href="haberler/haber-1.html">
+                <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/1.jpg" alt="Image description">
+              </a>
+              <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                <a target="_blank" href="haberler/haber-1.html">
+                  <h2 class="text-3xl font-bold capitalize text-white mb-3">Araştırma: Evren, hızı yavaşlasa da genişlemeye devam ediyor</h2>
+                </a>
+                <p class="text-gray-100 hidden sm:inline-block">Evrenin hızı yavaşlasa da genişlemeye devam ediyor, yeni araştırmalar bunu doğruluyor.</p>
+                <div class="pt-2">
+                  <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Gündem</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Start box news-->
+          <div class="flex-shrink max-w-full w-full lg:w-1/2">
+            <div class="box-one flex flex-row flex-wrap">
+              <article class="flex-shrink max-w-full w-full sm:w-1/2">
+                <div class="relative hover-img max-h-48 overflow-hidden">
+                  <a target="_blank" href="haberler/haber-2.html">
+                    <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/2.jpg" alt="Image description">
+                  </a>
+                  <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                    <a target="_blank" href="haberler/haber-2.html">
+                      <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">Samsung, Apple'ı Ezip Geçiyor: Rekabetteki Son Durum Belli Oldu!</h2>
+                    </a>
+                    <div class="pt-1">
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Bilim-Teknoloji</div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="flex-shrink max-w-full w-full sm:w-1/2">
+                <div class="relative hover-img max-h-48 overflow-hidden">
+                  <a target="_blank" href="haberler/haber-3.html">
+                    <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/3.jpg" alt="Image description">
+                  </a>
+                  <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                    <a target="_blank" href="haberler/haber-3.html">
+                      <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">Koç Holding'den Yapı ve Kredi açıklaması</h2>
+                    </a>
+                    <div class="pt-1">
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Finans</div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="flex-shrink max-w-full w-full sm:w-1/2">
+                <div class="relative hover-img max-h-48 overflow-hidden">
+                  <a target="_blank" href="haberler/haber-4.html">
+                    <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/4.jpg" alt="Image description">
+                  </a>
+                  <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                    <a target="_blank" href="haberler/haber-4.html">
+                      <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">Fidye İçin Kaçırıldı Vurularak Öldürüldü! Güney Afrika Milli Futbolcudan Gelen Acı Haberle Sarsıldı 
+                      </h2>
+                    </a>
+                    <div class="pt-1">
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Spor</div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="flex-shrink max-w-full w-full sm:w-1/2">
+                <div class="relative hover-img max-h-48 overflow-hidden">
+                  <a target="_blank" href="haberler/haber-5.html">
+                    <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/5.jpg" alt="Image description">
+                  </a>
+                  <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                    <a target="_blank" href="haberler/haber-5.html">
+                      <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">Denis Villeneuve’ün “Dune 3” Filmi Resmi Onayı Aldı: “Dune: Messiah” Geliyor</h2>
+                    </a>
+                    <div class="pt-1">
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Yaşam</div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- block news -->
+    <div class="bg-white">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
+          <!-- Left -->
+          <div class="bg-white py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
+          <div class="flex-shrink max-w-full w-full overflow-hidden">
+            <div class="w-full py-3">
+              <h2 class="text-gray-800 text-2xl font-bold">
+                <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Gündem
+              </h2>
+            </div>
+            <div class="flex flex-row flex-wrap -mx-3">
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-8.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/8.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-8.html">Japonya’da yaşayan herkesin soyadı, 2531 yılında aynı olabilir </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Japonya'da yaşayanların soyadları, gelecekte standartlaştırılabilir, yeni bir araştırma öne sürüyor.</p>
+                    <a class="text-gray-500" href="kategori/gundem.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Gündem</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-9.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/9.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-9.html">Arjantin'de dang humması vakalarında artış: Sinek kovucu tedarikinde sorunlar yaşanıyor</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Arjantin'de dang humması vakalarında endişe verici bir artış yaşanıyor, yetkililer alarm veriyor.</p>
+                    <a class="text-gray-500" href="kategori/gundem.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Gündem</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-10.html">
+                    <img class="max-w-full w-full mx-auto"src="src/img/dummy/10.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-10.html">Putin'in "yeni Mariupol'ünü" Alman firmalar inşa ediyor </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Putin'in "yeni Mariupol'ü" Alman firmalar tarafından inşa ediliyor, bu durum uluslararası arenada tartışmalara yol açıyor.</p>
+                    <a class="text-gray-500" href="kategori/gundem.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Gündem</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-11.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/11.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-11.html">Netflix'in yeni dizisi izleyicileri hayran bıraktı: "Bayıldım" </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Netflix'in yeni dizisi, izleyicileri büyülemeye devam ediyor ve olumlu eleştiriler alıyor.</p>
+                    <a class="text-gray-500" href="kategori/gundem.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Gündem</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-12.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/12.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-12.html">Ukrayna savaşının Putin'e maliyeti: Yarım milyon engelli erkek </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Ukrayna savaşının Putin'e maliyeti ağır olacak, uzmanlar ekonomik sonuçları değerlendiriyor.</p>
+                    <a class="text-gray-500" href="kategori/gundem.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Gündem</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-13.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/13.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-13.html">Zaman Nedir? </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Zaman kavramı, farklı disiplinlerde farklı şekillerde ele alınıyor, yeni bir araştırma bu konuda yeni bir bakış açısı sunuyor.</p>
+                    <a class="text-gray-500" href="kategori/gundem.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Gündem</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+        </div>
+      </div>
+    </div>
+
+    <!-- slider news -->
+    <div class="relative bg-gray-50" style="background-image: url('src/img/bg.jpg');background-size: cover;background-position: center center;background-attachment: fixed">
+      <div class="bg-black bg-opacity-70">
+        <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+          <div class="flex flex-row flex-wrap">
+            <div class="flex-shrink max-w-full w-full py-12 overflow-hidden">
+              <div class="w-full py-3">
+                <h2 class="text-white text-2xl font-bold text-shadow-black">
+                  <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Bilim Ve Teknoloji
+                </h2>
+              </div>
+              <div id="post-carousel" class="splide post-carousel">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="w-full pb-3">
+                        <div class="hover-img bg-white">
+                          <a target="_blank" href="haberler/haber-14.html">
+                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/14.jpg" alt="alt title">
+                          </a>
+                          <div class="py-3 px-6">
+                            <h3 class="text-lg font-bold leading-tight mb-2">
+                              <a target="_blank" href="haberler/haber-14.html">E-ticaret Sitelerindeki Sahte Yorumlara Dikkat </a>
+                            </h3>
+                            <a class="text-gray-500" href="kategori/bilim-teknoloji.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Bilim ve Teknoloji</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="w-full pb-3">
+                        <div class="hover-img bg-white">
+                          <a target="_blank" href="haberler/haber-15.html">
+                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/15.jpg" alt="alt title">
+                          </a>
+                          <div class="py-3 px-6">
+                            <h3 class="text-lg font-bold leading-tight mb-2">
+                              <a target="_blank" href="haberler/haber-15.html">Netflix'ten sonra şimdi de Disney! Hesap paylaşma dönemine son.</a>
+                            </h3>
+                            <a class="text-gray-500" href="kategori/bilim-teknoloji.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Bilim ve Teknoloji</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="w-full pb-3">
+                        <div class="hover-img bg-white">
+                          <a target="_blank" href="haberler/haber-16.html">
+                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/16.jpg" alt="alt title">
+                          </a>
+                          <div class="py-3 px-6">
+                            <h3 class="text-lg font-bold leading-tight mb-2">
+                              <a target="_blank" href="haberler/haber-16.html">Duolingo'nun Durup Dururken Logosunu Değiştirmesi Gündem Oldu: "Üzgün Baykuş" Hiç Ummadığınız Birini Temsil Ediyor...</a>
+                            </h3>
+                            <a class="text-gray-500" href="kategori/bilim-teknoloji.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Bilim ve Teknoloji</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="w-full pb-3">
+                        <div class="hover-img bg-white">
+                          <a target="_blank" href="haberler/haber-17.html">
+                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/17.jpg" alt="alt title">
+                          </a>
+                          <div class="py-3 px-6">
+                            <h3 class="text-lg font-bold leading-tight mb-2">
+                              <a target="_blank" href="haberler/haber-17.html">17 Redmi Turbo 3, OIS destekli 200 Megapiksel ana kamera ile sahne alacak</a>
+                            </h3>
+                            <a class="text-gray-500" href="kategori/bilim-teknoloji.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Bilim ve Teknoloji</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="w-full pb-3">
+                        <div class="hover-img bg-white">
+                          <a target="_blank" href="haberler/haber-18.html">
+                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/18.jpg" alt="alt title">
+                          </a>
+                          <div class="py-3 px-6">
+                            <h3 class="text-lg font-bold leading-tight mb-2">
+                              <a target="_blank" href="haberler/haber-18.html">TikTok Çalışanı Muhbir Oldu: Uygulama Yasaklanmaya Bir Adım Daha mı Yaklaştı? </a>
+                            </h3>
+                            <a class="text-gray-500" href="kategori/bilim-teknoloji.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Bilim ve Teknoloji</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="w-full pb-3">
+                        <div class="hover-img bg-white">
+                          <a target="_blank" href="haberler/haber-19.html">
+                            <img class="max-w-full w-full mx-auto" src="src/img/dummy/19.jpg" alt="alt title">
+                          </a>
+                          <div class="py-3 px-6">
+                            <h3 class="text-lg font-bold leading-tight mb-2">
+                              <a target="_blank" href="haberler/haber-19.html">Güneş panelinde yeni dönem! Bu alternatifler hem esnek hem de ucuz </a>
+                            </h3>
+                            <a class="text-gray-500" href="kategori/bilim-teknoloji.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Bilim ve Teknoloji</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- block news -->
+    <div class="bg-white py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
+          <div class="flex-shrink max-w-full w-full overflow-hidden">
+            <div class="w-full py-3">
+              <h2 class="text-gray-800 text-2xl font-bold">
+                <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Finans
+              </h2>
+            </div>
+            <div class="flex flex-row flex-wrap -mx-3">
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-6.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/6.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-6.html">Altcoin uyarısı geldi: Ether-Bitcoin paritesinde kritik sinyal! </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Altcoin yatırımcılarına uyarı geldi, piyasada belirsizlikler devam ediyor.</p>
+                    <a class="text-gray-500" href="kategori/finans.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Finans</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-20.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/20.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-20.html">InterDigital yöneticisi 66 bin doların üzerinde hisse sattı</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">InterDigital yöneticileri hisse satışlarıyla gündemde, piyasada dikkatle takip ediliyor.</p>
+                    <a class="text-gray-500" href="kategori/finans.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Finans</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-21.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/21.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-21.html">ABD'de tarım dışı istihdam Mart'ta güçlü geldi</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">ABD'de tarım dışı istihdam güçlü geldi, ekonomik toparlanmaya işaret ediyor.</p>
+                    <a class="text-gray-500" href="kategori/finans.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Finans</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-22.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/22.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-22.html">Bitcoin düşüşe direniyor: Önceki döngülerden farklı! </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Bitcoin fiyatlarındaki dalgalanmalar, yatırımcıları endişelendiriyor, analistler durumu değerlendiriyor.</p>
+                    <a class="text-gray-500" href="kategori/finans.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Finans</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-23.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/23.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-23.html">Bernstein'ın Intel Hisselerine Bakış Açısı: '2030'dan Önce Yatırım Yapmak İçin Haklı Bir Neden Yok'</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Intel hisselerine ilişkin analizler yapıldı, yatırımcılar geleceği değerlendiriyor.</p>
+                    <a class="text-gray-500" href="kategori/finans.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Finans</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-24.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/24.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-24.html">Bank of America’nın En Çok Alım-Satım Yaptığı Hisseler (5 Nisan) </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Bank of America'nın en çok alım-satım yaptığı hisseler açıklandı, piyasadaki hareketlilik dikkatle izleniyor.</p>
+                    <a class="text-gray-500" href="kategori/finans.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Finans</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-25.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/25.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-25.html">Körfezli dev banka Yapı Kredi'ye talip: Koç Holding'den açıklama</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Körfezli dev banka, Yapı Kredi'ye talip oldu, bu durum bankacılık sektöründe yankı buluyor.</p>
+                    <a class="text-gray-500" href="kategori/finans.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Finans</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-26.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/26.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-26.html">Altın fiyatları zirveden döndü</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Altın fiyatları, piyasalardaki dalgalanmaya rağmen istikrarlı bir seyir izliyor, yatırımcılar bu durumu değerlendiriyor.</p>
+                    <a class="text-gray-500" href="kategori/finans.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Finans</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- block news -->
+    <div class="bg-gray-50 py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
+          <!-- Left -->
+          <div class="bg-white py-6">
+            <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+              <div class="flex flex-row flex-wrap">
+                <div class="flex-shrink max-w-full w-full overflow-hidden">
+                  <div class="w-full py-3">
+                    <h2 class="text-gray-800 text-2xl font-bold">
+                      <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Spor
+                    </h2>
+            </div>
+            <div class="flex flex-row flex-wrap -mx-3">
+              <div class="flex-shrink max-w-full w-full px-3 pb-5">
+                <div class="relative hover-img max-h-98 overflow-hidden">
+                  <!--thumbnail-->
+                  <a target="_blank" href="haberler/haber-28.html">
+                    <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/28.jpg" alt="Image description">
+                  </a>
+                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                    <!--title-->
+                    <a target="_blank" href="haberler/haber-28">
+                      <h2 class="text-3xl font-bold capitalize text-white mb-3">28 Japonya, 2026 FIFA Dünya Kupası elemelerinde Kuzey Kore'ye karşı hükmen galip</h2>
+                    </a>
+                    <p class="text-gray-100 hidden sm:inline-block">Japonya, 2026 FIFA Dünya Kupası elemelerinde avantaj sağladı, spor severler bu gelişmeyi takip ediyor.</p>                                                  
+                    <!-- author and date -->
+                    <div class="pt-2">
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Spor</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-29.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/29.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-29.html">Türkiye Futbol Federasyonu yönetimi, deprem bölgesine gidiyor </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Türkiye Futbol Federasyonu yönetimi, deprem bölgesine ziyaret gerçekleştirecek, toplumun desteğini sağlamak için adımlar atıyor.</p>
+                    <a class="text-gray-500" href="kategori/spor.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Spor</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-30.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/30.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-30.html">Arda Güler hayrete düşürdü, Başkan Perez 'acilen' görüşmek istedi</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Arda Güler, sürpriz bir hamleyle gündeme geldi, futbol camiası bu gelişmeyi konuşuyor.</p>
+                    <a class="text-gray-500" href="kategori/spor.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Spor</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-31.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/31.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-31.html">Bayern Münih'te deprem! Thomas Tuchel resmen duyurdu </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Bayern Münih, Thomas Tuchel'in açıklamalarıyla sarsıldı, kulüp geleceğe dair planlarını gözden geçiriyor.</p>
+                    <a class="text-gray-500" href="kategori/spor.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Spor</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-32.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/32.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-32.html">Zirkzee için 50 milyon euro </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Zirkzee için yapılan transfer hamlesi dikkat çekiyor, futbolseverler bu gelişmeyi heyecanla takip ediyor.</p>
+                    <a class="text-gray-500" href="kategori/spor.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Spor</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-33.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/33.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-33.html">Avrupa'nın yeni Modric'i Galatasaray'a geliyor! Bu isme dikkat edin...</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Galatasaray, Avrupa'nın yeni Modric'iyle anlaştı, taraftarlar gelecek sezon için umutlanıyor.</p>
+                    <a class="text-gray-500" href="kategori/spor.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Spor</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-34.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/34.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-34.html">Atlanta Hawks - Detroit Pistons: 121-113 | MAÇ SONUCU (ÖZET) - İşte NBA'de tüm sonuçlar </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">NBA'de Atlanta Hawks, Detroit Pistons'ı mağlup ederek galibiyet serisine devam etti, basketbolseverler maç özetini takip ediyor.</p>
+                    <a class="text-gray-500" href="kategori/spor.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Spor</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- block news -->
+    <div class="bg-gray-50 py-6">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+        <div class="flex flex-row flex-wrap">
+          <!-- post -->
+          <div class="bg-white py-6">
+            <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
+              <div class="flex flex-row flex-wrap">
+                <div class="flex-shrink max-w-full w-full overflow-hidden">
+                  <div class="w-full py-3">
+                    <h2 class="text-gray-800 text-2xl font-bold">
+                      <span class="inline-block h-5 border-l-3 border-red-600 mr-2"></span>Yaşam
+                    </h2>
+            </div>
+            <div class="flex flex-row flex-wrap -mx-3">
+              <div class="flex-shrink max-w-full w-full px-3 pb-5">
+                <div class="relative hover-img max-h-98 overflow-hidden">
+                  <!--thumbnail-->
+                  <a target="_blank" href="haberler/haber-35.html">
+                    <img class="max-w-full w-full mx-auto h-auto" src="src/img/dummy/35.jpg" alt="Image description">
+                  </a>
+                  <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                    <!--title-->
+                    <a target="_blank" href="haberler/haber-35.html">
+                      <h2 class="text-3xl font-bold capitalize text-white mb-3">Uzun Süredir Orada Yaşayan Birinden: Bursa'da Sağlam Bir Kentsel Dönüşüm Neden Zor?</h2>
+                    </a>
+                    <p class="text-gray-100 hidden sm:inline-block"> This very helpfull for generate default content..</p>                                                  
+                    <!-- author and date -->
+                    <div class="pt-2">
+                      <div class="text-gray-100"><div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Yaşam</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-36.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/36.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-36.html">Kelebekler Yağmur Gibi Şiddetli Doğa Olaylarında Ne Yapıyorlar?</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Kelebeklerin doğa olaylarına uyum sağlaması ilginç bir fenomen, bilim insanları bu konuyu araştırıyor.</p>
+                    <a class="text-gray-500" href="kategori/yasam.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Yaşam</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-37.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/37.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-37.html">Wombly, Adapte Edilebilen Giysilerle Özel Gereksinimli Çocukların Hayatına Dokunuyor</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Wombly, özel gereksinimli çocuklar için giysi tasarımında öncü bir rol üstleniyor, toplumda olumlu bir etki yaratıyor.</p>
+                    <a class="text-gray-500" href="kategori/yasam.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Yaşam</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-38.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/38.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-38.html">Jacquemus’un CGI Ürünü Dev Çantaları Bu Kez Gerçekten Sokakta </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Jacquemus'un dev çantaları, şimdi gerçek dünyaya taşınıyor, moda tutkunları bu ürünleri merakla bekliyor.</p>
+                    <a class="text-gray-500" href="kategori/yasam.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Yaşam</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-39.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/39.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-39.html">Bir Zamanlar Fakir Yiyeceği Olan Istakoz Nasıl Zenginlerin Tercihine Dönüştü? </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">İstakozun yükselişi, geçmişte fakir bir yiyecekten lüks bir tercihe dönüşmesinin ilginç hikayesini anlatıyor, gastronomi dünyası bu değişimi inceliyor.</p>
+                    <a class="text-gray-500" href="kategori/yasam.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Yaşam</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-40.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/40.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-40.html">Daha Önce Hiç Görülmemişti: Yeni Bir Galaksi Türü Gözlemlendi</a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Gökbilimciler, yeni bir galaksi türünü keşfetti, evrenin sırlarını daha da aydınlatıyorlar.</p>
+                    <a class="text-gray-500" href="kategori/yasam.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Yaşam</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
+                <div class="flex flex-row sm:block hover-img">
+                  <a target="_blank" href="haberler/haber-41.html">
+                    <img class="max-w-full w-full mx-auto" src="src/img/dummy/41.jpg" alt="alt title">
+                  </a>
+                  <div class="py-0 sm:py-3 pl-3 sm:pl-0">
+                    <h3 class="text-lg font-bold leading-tight mb-2">
+                      <a target="_blank" href="haberler/haber-41.html">Kan şekerini hızlıca düşürmenin yolları </a>
+                    </h3>
+                    <p class="hidden md:block text-gray-600 leading-tight mb-1">Kan şekerini hızlıca düşürmenin yolları, diyabet yönetiminde önemli bir konu, uzmanlar bu konuda bilgi veriyor.</p>
+                    <a class="text-gray-500" href="kategori/yasam.html" target="_blank"><span class="inline-block h-3 border-l-2 border-red-600 mr-2"></span>Yaşam</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main><!-- end main -->
+
+  <!-- =========={ FOOTER }==========  -->
+  <footer class="bg-black text-gray-400">
+    <!--Footer content-->
+    <div id="footer-content" class="relative pt-8 xl:pt-16 pb-6 xl:pb-12">
+      <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2 overflow-hidden">
+        <div class="flex flex-wrap flex-row lg:justify-between -mx-3">
+          <div class="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16">
+            <div class="flex items-center mb-2">
+              <span class="text-3xl leading-normal mb-2 font-bold text-gray-100 mt-2">SenihHaber</span>
+              <!-- <img src="src/img-min/logo.png" alt="LOGO"> -->
+            </div>
+            <p>SenihHaber, günlük yaşamınızı şekillendiren haberlere dair detaylı ve güvenilir bilgiyi sunan bir haber portalı. </p>
+          </div>
+          <div class="flex-shrink max-w-full w-full lg:w-3/5 px-3">
+            <div class="flex flex-wrap flex-row">
+              <div class="flex-shrink max-w-full w-1/2 md:w-1/4 mb-6 lg:mb-0">
+                <ul>
+                  <li class="py-1 hover:text-white"><a href="index-2.html">Kategoriler</a></li>
+
+                </ul>
+              </div>
+              <div class="flex-shrink max-w-full w-1/2 md:w-1/4 mb-6 lg:mb-0">
+                <ul>
+                  <li class="py-1 hover:text-white"><a href="iletisim.html">İletişim</a></li>
+                </ul>
+              </div>
+              <div class="flex-shrink max-w-full w-1/2 md:w-1/4 mb-6 lg:mb-0">
+                <ul>
+                  <li class="py-1 hover:text-white"><a href="hakkimizda.html">Hakkımızda</a></li>
+                </ul>
+              </div>
+              <div class="flex-shrink max-w-full w-1/2 md:w-1/4 mb-6 lg:mb-0">
+                <ul>
+                  <li class="py-1 hover:text-white hover:text-white"><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Start footer copyright-->
+    <div class="footer-dark">
+      <div class="container py-4 border-t border-gray-200 border-opacity-10">
+        <div class="row">
+          <div class="col-12 col-md text-center">
+            <p class="d-block my-3">Copyright © SenihHaber | Tüm Hakları Saklıdır.</p>
+          </div>
+        </div>
+      </div>
+    </div><!--End footer copyright-->
+  </footer><!-- end footer -->
+
+  <!-- =========={ SCROLL TO TOP }==========  -->
+  <a href="#" class="back-top fixed p-4 rounded bg-gray-100 border border-gray-100 text-gray-500 dark:bg-gray-900 dark:border-gray-800 right-4 bottom-4 hidden" aria-label="Scroll To Top">
+    <svg width="1rem" height="1rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+      <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"></path>
+    </svg>
+  </a>
+
+  <!--Vendor js-->
+  <script src="src/vendors/hc-sticky/dist/hc-sticky.js"></script>
+  <script src="src/vendors/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="src/vendors/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="src/vendors/@splidejs/splide-extension-video/dist/js/splide-extension-video.min.js"></script>
+  
+  <!-- Start development js -->
+  <script src="src/js/theme.js"></script>
+  <!-- End development js -->
+
+  <!-- Production js -->
+  <!-- <script src="dist/js/scripts.js"></script> -->
+</body>
+</html>
